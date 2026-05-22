@@ -1,0 +1,50 @@
+:root {
+  --bg: #e8e8d8;
+  --black: #111111;
+  --orange: #f5a623;
+  --orange-dark: #e0941a;
+  --white: #ffffff;
+  --text: #111111;
+  --text-muted: #555555;
+  --border: 3px solid #111111;
+  --font-pixel: 'Share Tech Mono', monospace;
+  --font-body: 'Space Grotesk', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--black);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 0;
+}
